@@ -7,14 +7,14 @@ class RootScreen extends React.Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>Root</Text>
+        <Text style={styles.title}>Welcome</Text>
         <Button
-          title="Go to App"
           onPress={() => this.props.navigation.navigate("Home")}
+          title="Go to App"
         />
         <Button
-          title="Go to Storybook"
           onPress={() => this.props.navigation.navigate("Storybook")}
+          title="Go to Storybook"
         />
       </View>
     );
