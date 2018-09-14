@@ -6,6 +6,7 @@
     "@storybook/addon-actions": "^4.0.0-alpha.21",
     "@storybook/addon-knobs": "^4.0.0-alpha.21",
     "@storybook/addon-links": "^4.0.0-alpha.21",
+    "@storybook/addon-storyshots": "^4.0.0-alpha.21",
     "@storybook/addons": "^4.0.0-alpha.21",
     "@storybook/react-native": "^4.0.0-alpha.21",
     "babel-core": "^6.26.3",
@@ -28,7 +29,10 @@
     "storybook": "storybook start -p 7007"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "moduleNameMapper": {
+      ".+\\.(png)$": "jest-static-stubs/png"
+    }
   },
   "config": {
     "react-native-storybook-loader": {
@@ -41,6 +45,7 @@
   },
   "dependencies": {
     "expo": "^27.0.1",
+    "jest-static-stubs": "^0.0.1",
     "react": "16.3.1",
     "react-native": "~0.55.2",
     "react-navigation": "^2.14.0"
