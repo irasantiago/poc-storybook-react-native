@@ -2,15 +2,15 @@ import StorybookUI from "./storybook";
 import React from "react";
 import { createStackNavigator } from "react-navigation";
 
-import HomeScreen from "./src/routes/HomeScreen";
-import OrderScreen from "./src/routes/OrderScreen";
-import RootScreen from "./src/routes/RootScreen";
+import HomeContainer from "./src/containers/HomeContainer";
+import OrderContainer from "./src/containers/OrderContainer";
+import RootContainer from "./src/containers/RootContainer";
 
 const Router = createStackNavigator(
   {
-    Root: RootScreen,
-    Home: HomeScreen,
-    Order: OrderScreen,
+    Root: RootContainer,
+    Home: HomeContainer,
+    Order: OrderContainer,
     Storybook: StorybookUI
   },
   {

@@ -3,7 +3,7 @@ import { Button, Text, View } from "react-native";
 
 import styles from "./styles.js";
 
-class RootScreen extends React.Component {
+class RootContainer extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -21,4 +21,4 @@ class RootScreen extends React.Component {
   }
 }
 
-export default RootScreen;
+export default RootContainer;

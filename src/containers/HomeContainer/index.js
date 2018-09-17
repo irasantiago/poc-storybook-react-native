@@ -3,7 +3,7 @@ import { Button, Text, View } from "react-native";
 
 import styles from "./styles.js";
 
-class HomeScreen extends React.Component {
+class HomeContainer extends React.Component {
   render() {
     return (
       <View style={styles.container}>
@@ -17,4 +17,4 @@ class HomeScreen extends React.Component {
   }
 }
 
-export default HomeScreen;
+export default HomeContainer;

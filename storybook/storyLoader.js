@@ -6,12 +6,16 @@
 
 function loadStories() {
   require('../src/components/Button/index.stories');
+  require('../src/components/SelectionMenu/SelectionMenuItem/index.stories');
+  require('../src/components/SelectionMenu/index.stories');
   require('../src/components/Welcome/index.stories');
   
 }
 
 const stories = [
   '../src/components/Button/index.stories',
+  '../src/components/SelectionMenu/SelectionMenuItem/index.stories',
+  '../src/components/SelectionMenu/index.stories',
   '../src/components/Welcome/index.stories',
   
 ];
